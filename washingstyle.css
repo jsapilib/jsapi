@@ -1,0 +1,45 @@
+
+.display {
+	
+	padding: 20px;
+	text-transform: uppercase;
+	max-width: 600px;
+	min-height: 80px;
+	text-align: center;
+	margin: 10px auto;
+	background-color: rgb(193,210,192);
+	color: rgb(58,58,57);
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+	
+.machine{
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	max-width: 300px;
+}
+
+#button
+{
+	padding: 20px;
+	max-width: 200px;
+	min-height: 20px;
+	text-align: center;
+	margin: 10px auto;
+	
+}
+.washingMachine {max-height: 300px; }
+#spinner {max-width: 100px;
+	max-height: 100px;
+	position: absolute;
+	top: 115px;
+	left: 70px;
+}
+#spinner.Soaking {animation: rotate 2s linear 0s infinite; -moz-animation: rotate 2s linear 0s infinite;  }
+#spinner.Washing {animation: rotate 1s linear 0s infinite; -moz-animation: rotate 1s linear 0s infinite;  }
+#spinner.Rinsing {animation: rotate 0.4s linear 0s infinite; -moz-animation: rotate 0.4s linear 0s infinite;  }
+@keyframes rotate {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
