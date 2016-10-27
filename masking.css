@@ -1,0 +1,48 @@
+/* animation classes */
+		.anim-class1{ animation: animation1 3s linear 0s 2 alternate; }
+		.anim-class2{ animation: animation2 3s linear 0s 2 alternate; }
+		.anim-class3{ animation: animation3 3s linear 0s 2 alternate; }
+		/* animations */
+		@keyframes animation1 { 
+			0%   { background: linear-gradient(to left top, rgba(255,0,0,0), rgba(255,0,0,1)10%);  }
+			25%  { background: linear-gradient(to left top, rgba(255,0,0,0), rgba(255,0,0,1)30%);  }
+			50%  { background: linear-gradient(to left top, rgba(255,0,0,0), rgba(255,0,0,1)60%);  }
+			75%  { background: linear-gradient(to left top, rgba(255,0,0,0), rgba(255,0,0,1)90%);  }
+			100% { background: linear-gradient(to left top, rgba(255,0,0,0), rgba(255,0,0,1)100%); }
+		}
+		@keyframes animation2 {
+			0%   { background: radial-gradient(circle, rgba(0,255,0,0), rgba(0,255,0,1)10%);  }
+			25%  { background: radial-gradient(circle, rgba(0,255,0,0), rgba(0,255,0,1)30%);  }
+			50%  { background: radial-gradient(circle, rgba(0,255,0,0), rgba(0,255,0,1)60%);  }
+			75%  { background: radial-gradient(circle, rgba(0,255,0,0), rgba(0,255,0,1)90%);  }
+			100% { background: radial-gradient(circle, rgba(0,255,0,0), rgba(0,255,0,1)100%); }
+		}
+		@keyframes animation3 {
+			0%   { background: radial-gradient(at top, rgba(0,0,255,0), rgba(0,0,255,1)10%);  }
+			25%  { background: radial-gradient(at top, rgba(0,0,255,0), rgba(0,0,255,1)30%);  }
+			50%  { background: radial-gradient(at top, rgba(0,0,255,0), rgba(0,0,255,1)60%);  }
+			75%  { background: radial-gradient(at top, rgba(0,0,255,0), rgba(0,0,255,1)90%);  }
+			100% { background: radial-gradient(at top, rgba(0,0,255,0), rgba(0,0,255,1)100%); }
+		}
+
+		.masks {
+			display: flex; 			       /* display flex makes its children to display in row */
+			min-width: 100vw;              /* 100 view port width i.e. browser width            */
+			justify-content: space-around; /* space-around puts space around its children       */
+		}
+		.mask, img {
+			width: 500px;
+			height: 500px;
+			box-sizing: border-box;
+		}
+		.image-mask {
+			position: relative;             /* important for positioning */
+		}
+		.mask {
+			border: 10px solid black;
+			position: absolute;             /* important for positioning */
+		}
+		/* use same color of background color in animation */
+		#mask1 { background-color: rgb(255,0,0); }
+		#mask2 { background-color: rgb(0,255,0); }
+		#mask3 { background-color: rgb(0,0,255); }
